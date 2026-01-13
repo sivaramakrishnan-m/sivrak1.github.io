@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Siva MSRK - Construction Management SaaS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d6a73",
+                        "accent-orange": "#f97316",
+                        "background-light": "#f9fafa",
+                        "background-dark": "#17191c",
+                        "slate-gray": "#4a5568",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Manrope', sans-serif;
+            min-height: 100dvh;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#111718] dark:text-white antialiased">
+<nav class="sticky top-0 z-50 flex items-center bg-white/90 dark:bg-background-dark/90 backdrop-blur-md p-4 border-b border-[#dce4e5] dark:border-gray-800 justify-between">
+<div class="flex items-center gap-2">
+<div class="text-primary flex size-10 items-center justify-center bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<h2 class="text-[#111718] dark:text-white text-lg font-extrabold leading-tight tracking-tight">BuildControl</h2>
+</div>
+<div class="flex items-center gap-3">
+<p class="text-slate-gray dark:text-gray-400 text-sm font-bold">Log In</p>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider">Join</button>
+</div>
+</nav>
+<section class="relative w-full p-4">
+<div class="flex min-h-[500px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-2xl items-center justify-center p-6 relative overflow-hidden shadow-2xl" style='background-image: linear-gradient(rgba(13, 106, 115, 0.75) 0%, rgba(17, 23, 24, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-3nNTwDjF6i98E1Zpb3Fmf1EvCnmNp2qPypIZj2MjZ4ti6clQ_wsoE_XGGc_QgV3LXxsbSVWr-yL7KS5LfUgYAhaXOX-tLo1wJ3HTWChCp-kD9GePcUvMZ8SousnxWUDHRUUbKaS-vhBQL2VHViW19dR-SnyGvrLWyUzgAh5WZ8-ZfiVV16fQzcMRy7D0B3sdSRbIeCNhePOzM5WqlbDvJGA5_UlJVPcPEoPYQ34jQRUFRw-2qWpQzd6qO6Ge9Xx5dQMtBausO_o");'>
+<div class="absolute top-4 left-4">
+<span class="bg-accent-orange text-white text-[10px] font-black px-2 py-1 rounded uppercase tracking-widest">Comming soon...</span>
+</div>
+<div class="flex flex-col gap-4 text-center max-w-[480px] z-10">
+<h1 class="text-white text-4xl font-extrabold leading-[1.1] tracking-tight">
+                Built for Builders. Powered by SaaS.
+            </h1>
+<p class="text-gray-300 text-base font-medium leading-relaxed">
+                The all-in-one construction management platform designed to centralize operations, maximize efficiency, and boost profitability for the modern builder.
+            </p>
+</div>
+<div class="flex flex-col w-full gap-3 mt-4 z-10">
+<button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-14 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30" href="https://www.instagram.com/siva.msrk?igsh=N3J3am9kd29xandw">
+                Get a Demo
+            </button>
+<button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-14 bg-white/10 backdrop-blur-md text-white border border-white/20 text-base font-bold" href="https://www.instagram.com/siva.msrk?igsh=N3J3am9kd29xandw">
+                Insta Us
+            </button>
+</div>
+</div>
+</section>
+<section class="py-12 px-4 bg-white dark:bg-background-dark">
+<h4 class="text-primary text-xs font-black tracking-[0.2em] mb-3 text-center uppercase">Benefits</h4>
+<h2 class="text-[#111718] dark:text-white text-2xl font-extrabold text-center mb-10 px-4">Why Builders Choose Our Platform</h2>
+<div class="grid grid-cols-1 gap-8">
+<div class="flex flex-col items-center text-center gap-4">
+<div class="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">speed</span>
+</div>
+<h3 class="text-xl font-bold">Lightning Fast Setup</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Go from spreadsheet chaos to cloud-powered organization in days, not months.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4">
+<div class="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">groups</span>
+</div>
+<h3 class="text-xl font-bold">Unrivaled Collaboration</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Bridge the gap between the field and the office with real-time updates and document sharing.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4">
+<div class="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">security</span>
+</div>
+<h3 class="text-xl font-bold">Data Sovereignty</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Your data is encrypted, secure, and accessible only to your authorized team members.</p>
+</div>
+</div>
+</section>
+<section class="py-12 bg-background-light dark:bg-gray-900/50">
+<div class="px-4">
+<h4 class="text-primary text-xs font-black tracking-[0.2em] mb-3 text-center uppercase">Features</h4>
+<h2 class="text-[#111718] dark:text-white text-2xl font-extrabold text-center mb-8 px-4">Core Platform Capabilities</h2>
+<div class="grid grid-cols-1 gap-4">
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-[#dce4e5] dark:border-gray-800 flex gap-4">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">event_note</span>
+<div>
+<h3 class="font-bold text-lg mb-1">Project Planning</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Master schedules with interactive Gantt charts, milestone tracking, and automated task assignments.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-[#dce4e5] dark:border-gray-800 flex gap-4">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">account_balance_wallet</span>
+<div>
+<h3 class="font-bold text-lg mb-1">Financial Management</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Track budgets, variations, and job costing in real-time to maintain healthy profit margins.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-[#dce4e5] dark:border-gray-800 flex gap-4">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">description</span>
+<div>
+<h3 class="font-bold text-lg mb-1">Document Control</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Centralized repository for blueprints, RFIs, and contracts with version control and offline access.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-[#dce4e5] dark:border-gray-800 flex gap-4">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">verified_user</span>
+<div>
+<h3 class="font-bold text-lg mb-1">Quality &amp; Safety</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Digital checklists, safety logs, and defect tracking to ensure industry compliance and high standards.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-[#dce4e5] dark:border-gray-800 flex gap-4">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">shopping_cart</span>
+<div>
+<h3 class="font-bold text-lg mb-1">Procurement</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Streamline material orders and subcontractor management through automated purchase workflows.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-[#dce4e5] dark:border-gray-800 flex gap-4">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">insights</span>
+<div>
+<h3 class="font-bold text-lg mb-1">Reporting &amp; Analytics</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Gain deep insights into project performance with customizable dashboards and automated reporting.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 px-4 bg-white dark:bg-background-dark border-y border-[#dce4e5] dark:border-gray-800">
+<div class="flex flex-col gap-6 items-center text-center">
+<div class="bg-primary/10 p-4 rounded-2xl">
+<span class="material-symbols-outlined text-primary" style="font-size: 48px;">handshake</span>
+</div>
+<h2 class="text-2xl font-extrabold">Client Portal</h2>
+<p class="text-slate-gray dark:text-gray-400 text-base leading-relaxed max-w-sm">
+            Keep your clients informed and engaged with a dedicated portal. Provide real-time progress photos, budget updates, and messaging for a transparent construction experience.
+        </p>
+<div class="grid grid-cols-2 gap-4 w-full mt-4">
+<div class="p-4 border border-[#dce4e5] dark:border-gray-800 rounded-lg bg-background-light dark:bg-gray-900">
+<p class="text-primary font-bold text-lg">24/7</p>
+<p class="text-[10px] uppercase font-bold text-slate-gray">Access</p>
+</div>
+<div class="p-4 border border-[#dce4e5] dark:border-gray-800 rounded-lg bg-background-light dark:bg-gray-900">
+<p class="text-primary font-bold text-lg">Live</p>
+<p class="text-[10px] uppercase font-bold text-slate-gray">Chat</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 px-4 bg-background-light dark:bg-background-dark">
+<div class="flex flex-col gap-8">
+<div class="bg-primary p-8 rounded-2xl text-white relative overflow-hidden">
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-white/10" style="font-size: 160px;">schedule</span>
+<div class="relative z-10">
+<h2 class="text-2xl font-black mb-4">Time, Attendance &amp; Payroll</h2>
+<p class="text-white/80 text-sm leading-relaxed mb-6">
+                    Eliminate manual timesheets. Our GPS-integrated time tracking ensures crew hours are accurate, verifiable, and synced directly to your payroll systems.
+                </p>
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-accent-orange">check_circle</span>
+                        Geofenced Site Entry/Exit
+                    </li>
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-accent-orange">check_circle</span>
+                        Automated Overtime Calculation
+                    </li>
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-accent-orange">check_circle</span>
+                        One-Click Payroll Exports
+                    </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-4 bg-white dark:bg-background-dark">
+<h4 class="text-primary text-xs font-black tracking-[0.2em] mb-3 text-center uppercase">Value Proposition</h4>
+<h2 class="text-[#111718] dark:text-white text-2xl font-extrabold text-center mb-8 px-4">Key Benefits</h2>
+<div class="grid grid-cols-1 gap-6">
+<div class="flex gap-4 p-4 rounded-xl hover:bg-background-light dark:hover:bg-gray-900 transition-colors">
+<span class="material-symbols-outlined text-accent-orange" style="font-size: 32px;">trending_up</span>
+<div>
+<h3 class="font-bold text-lg">Increased Productivity</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm">Automate repetitive tasks and free up your team for actual building.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-xl hover:bg-background-light dark:hover:bg-gray-900 transition-colors">
+<span class="material-symbols-outlined text-accent-orange" style="font-size: 32px;">savings</span>
+<div>
+<h3 class="font-bold text-lg">Cost Containment</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm">Identify budget leaks early and prevent expensive rework.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-xl hover:bg-background-light dark:hover:bg-gray-900 transition-colors">
+<span class="material-symbols-outlined text-accent-orange" style="font-size: 32px;">architecture</span>
+<div>
+<h3 class="font-bold text-lg">Standardized Quality</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm">Ensure every project meets your signature build quality.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="p-4">
+<div class="relative overflow-hidden rounded-2xl bg-[#111718] px-8 py-12 text-white">
+<div class="absolute -right-16 -top-16 opacity-10">
+<span class="material-symbols-outlined" style="font-size: 280px;">cloud_done</span>
+</div>
+<div class="relative z-10">
+<p class="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4">The Future is Here</p>
+<h3 class="text-3xl font-black leading-tight mb-4">Why SaaS Works for Builders</h3>
+<p class="text-gray-400 text-base font-medium leading-relaxed mb-8">
+                Legacy software is slow and trapped in the office. SaaS (Software as a Service) empowers your team to carry the entire project in their pocket. Real-time syncing ensures that if a plan changes in the office, the foreman on site sees it instantly.
+            </p>
+<div class="grid grid-cols-1 gap-6 border-l border-primary/30 pl-6">
+<div>
+<h4 class="font-bold text-lg text-white">Automatic Updates</h4>
+<p class="text-sm text-gray-500">Always use the latest features without IT intervention.</p>
+</div>
+<div>
+<h4 class="font-bold text-lg text-white">Scalable Pricing</h4>
+<p class="text-sm text-gray-500">Pay for what you use, scale up or down as your project volume fluctuates.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white dark:bg-background-dark">
+<h4 class="text-primary text-xs font-black tracking-[0.2em] px-4 py-2 text-center uppercase">Target Audience</h4>
+<h2 class="text-[#111718] dark:text-white text-2xl font-extrabold text-center px-6 mb-10">Who Is It For?</h2>
+<div class="flex overflow-x-auto gap-4 px-4 pb-6 no-scrollbar">
+<div class="min-w-[280px] flex flex-col gap-4 rounded-xl bg-background-light dark:bg-gray-800 p-8 border-b-4 border-primary shadow-sm">
+<span class="material-symbols-outlined text-primary" style="font-size: 40px;">home_work</span>
+<h3 class="text-xl font-bold">Residential Builders</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Perfect for custom home builders managing client expectations and complex schedules.</p>
+</div>
+<div class="min-w-[280px] flex flex-col gap-4 rounded-xl bg-background-light dark:bg-gray-800 p-8 border-b-4 border-accent-orange shadow-sm">
+<span class="material-symbols-outlined text-accent-orange" style="font-size: 40px;">apartment</span>
+<h3 class="text-xl font-bold">Commercial Developers</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Designed for multi-site coordination and stringent compliance requirements.</p>
+</div>
+<div class="min-w-[280px] flex flex-col gap-4 rounded-xl bg-background-light dark:bg-gray-800 p-8 border-b-4 border-primary shadow-sm">
+<span class="material-symbols-outlined text-primary" style="font-size: 40px;">handyman</span>
+<h3 class="text-xl font-bold">Trade Contractors</h3>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">Optimized for HVAC, Electrical, and Plumbing firms needing precise workforce management.</p>
+</div>
+</div>
+</section>
+<div class="p-4 mb-12">
+<div class="flex flex-col items-center gap-6 rounded-3xl bg-primary p-10 text-center text-white shadow-2xl">
+<h2 class="text-3xl font-black leading-tight">Ready to build better?</h2>
+<p class="text-white/80 text-base">Join thousands of builders who have digitized their success with BuildControl.</p>
+<div class="flex flex-col w-full gap-4">
+<button class="bg-white text-primary h-14 rounded-xl font-black text-lg shadow-lg">Start Free Trial</button>
+<button class="bg-white/10 border border-white/20 h-14 rounded-xl font-bold text-lg">Contact Sales</button>
+</div>
+</div>
+</div>
+<footer class="bg-white dark:bg-background-dark p-8 border-t border-[#dce4e5] dark:border-gray-800">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<div class="text-primary flex size-8 items-center justify-center bg-primary/10 rounded">
+<span class="material-symbols-outlined" style="font-size: 20px;">architecture</span>
+</div>
+<h2 class="text-[#111718] dark:text-white text-md font-extrabold tracking-tight">BuildControl</h2>
+</div>
+<p class="text-slate-gray dark:text-gray-400 text-sm leading-relaxed">The most trusted construction management SaaS for the field and office.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<p class="text-primary font-black text-[10px] uppercase tracking-widest">Platform</p>
+<div class="flex flex-col gap-2 text-slate-gray dark:text-gray-400 text-sm font-bold">
+<p>Features</p>
+<p>Pricing</p>
+<p>Integrations</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-primary font-black text-[10px] uppercase tracking-widest">Company</p>
+<div class="flex flex-col gap-2 text-slate-gray dark:text-gray-400 text-sm font-bold">
+<p>About</p>
+<p>Contact</p>
+<p>Privacy</p>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center pt-8 border-t border-[#dce4e5] dark:border-gray-800">
+<p class="text-slate-gray text-[10px] font-medium">© 2026 Siva MSRK SaaS</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-gray" style="font-size: 20px;">language</span>
+<span class="material-symbols-outlined text-slate-gray" style="font-size: 20px;">share</span>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
